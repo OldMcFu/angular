@@ -1,0 +1,27 @@
+<div class="container mt-5">
+  <button (click)="onClickMe()" type="button" class="btn btn-success">Start Stimulation</button>
+  <button type="button" class="btn btn-danger">Stop Stimulation</button>
+  <button type="button" class="btn btn-info">Pars Test Container</button>
+
+  
+  <br>
+  <br>
+  <h2>Status</h2>
+  <br>
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>What</th>
+          <th>Text</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of Users">
+        <td>{{ user.what }}</td>
+        <td>{{ user.text }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>{{clickMessage}}</h2>
